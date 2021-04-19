@@ -2,7 +2,7 @@
 <html lang="en">
     
 <head>
-        <title>Jenil Bhadja</title>
+        <title>Mr  Jenil Bhadja</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -60,6 +60,7 @@
 
 
         <!-- Portfolio Single Modal -->
+        
         <div class="portfolio-single modal fade" id="portfolio-single" tabindex="-1" role="dialog" aria-labelledby="portfolioModalScrollable" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable" role="document">
                 <div class="modal-content bg-white">
@@ -985,6 +986,38 @@
             }
           }
           </script>
+
+<script>
+    window.onscroll = function() {
+        myFunction()
+    };
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = parseInt((winScroll / height) * 100);
+        document.getElementById("myBar").style.width = scrolled + "%";
+
+
+        //console.log(scrolled);
+
+        if (scrolled < 5) {
+            document.getElementById("back-to-top").style.background = document.getElementById("myBar").style.background = "var(--MatteBlack)";
+        } else if (scrolled < 19) {
+            document.getElementById("back-to-top").style.background = document.getElementById("myBar").style.background = "var(--GoogleBlue)";
+        } else if (scrolled < 30) {
+            document.getElementById("back-to-top").style.background = document.getElementById("myBar").style.background = "var(--GoogleGreen)";
+        } else if (scrolled < 44) {
+            document.getElementById("back-to-top").style.background = document.getElementById("myBar").style.background = "var(--GoogleRed)";
+        } else if (scrolled < 58) {
+            document.getElementById("back-to-top").style.background = document.getElementById("myBar").style.background = "var(--GoogleYellow)";
+        } else if (scrolled < 87) {
+            document.getElementById("back-to-top").style.background = document.getElementById("myBar").style.background = "var(--GoogleBlue)";
+        } else if (scrolled <= 100) {
+            document.getElementById("back-to-top").style.background = document.getElementById("myBar").style.background = "var(--GoogleGreen)";
+        }
+    }
+</script>
 
     </body>
 
